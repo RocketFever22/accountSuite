@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Made with Thimble</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="sectionTitle">Nuevo Ingreso</h1>
+  <section id="ingresar" name="ingresar">
+    <form onsubmit="crearMovimiento(event)">
+      <input type="text" name="monto" placeholder="Ammount" required><br>
+      <div class="radio-group">
+	      <input type="radio" value="ingreso" name="tipo" checked="checked" >Ingreso
+	      <input type="radio" value="egreso" name="tipo" >Egreso<br>
+      </div>
+      <textarea rows="5" name="concepto" placeholder="Concepto"></textarea><br>
+      <input type="submit" value="Confirmar">
+    </form>
+  </section>
+  
+  <section id="listar" name="listar" class="hidden">
+    <table>
+      <thead>
+        <tr><th>Monto</th><th>Concepto</th></tr>
+      </thead>
+      <tbody name="listadoMovimientos">
+      </tbody>
+      <tfoot>
+        <tr><td colspan="2"id="montoTotal"></td></tr>
+      </tfoot>
+    </table>
+  </section>
+  
+  <section id="estadisticas" name="estadisticas" class="hidden">
+    <table>
+      <thead>
+        <tr><th>Monto</th><th>Concepto</th></tr>
+      </thead>
+      <tbody name="listadoMovimientos">
+      </tbody>
+      <tfoot>
+        <tr><td colspan="2" ></td></tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <nav>
+    <button onclick="activarSeccion('ingresar')" >Nuevo</button>
+    <button onclick="activarSeccion('listar')">Listado</button>
+    <button onclick="activarSeccion('estadisticas')">Estadisticas</button>
+  </nav>
+  <script src="scripts.js"></script>
+</body>
+</html>

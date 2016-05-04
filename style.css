@@ -1,0 +1,91 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  padding:0;
+  margin:0;
+}
+
+input, button, submit { border:none; } 
+
+section{
+  width:100%;
+  margin-bottom: 10px;
+  margin:auto;
+  padding-bottom:40px;
+  float:left;
+  transition: visibility 1s;
+}
+
+nav{
+  position:fixed;
+  bottom:0;
+  left:0;
+  padding:0;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav button{
+  margin-left:0px;
+  float:left;
+  width:33.3%;
+  line-height: 20px;
+  text-align:center;
+  background-color:blue;
+  color:white;
+  padding: 10px 0px;
+  cursor:pointer;
+}
+
+section > h1{
+  margin-top:0px;
+  padding:10px;
+}
+
+section.hidden{
+  display:none;
+}
+
+section input[type="text"]{
+	background-color:#fafafa;
+	font-size:2em;
+	width:100%;
+	padding:.3em;
+}
+
+section textarea{
+	background-color:#fafafa;
+	font-size:2em;
+	width:100%;
+	padding:.3em;
+	border:none;
+}
+
+section .radio-group{
+	padding:.3em;
+	font-size:2em;
+}
+
+section input[type="submit"]{
+	font-size:2em;
+	padding:.3em;
+	width:100%;
+}
+
+#listar table{
+	width:100%;
+}
+
+#listar table th{
+	text-align:left;
+}
+
+#listar table tr{
+	line-height:40px;
+}
+
+#listar table tfoot{
+	text-align:right;
+	background-color:red;
+	color:white;
+}
